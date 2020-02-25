@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aece31a9-d2d2-4576-8ca7-1c7344fe67e9" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1YFuih7D2eus8i1GJ4p3Nia4ai4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="task3" />
+      <recent name="task2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jakub\Desktop\Systemy rozproszone\lab1\lab\Java\src" />
+      <recent name="C:\Users\jakub\Desktop\Systemy rozproszone\lab1\lab\Java\src\task1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JavaUdpServer (3)">
+    <configuration name="JavaUdpClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task1.JavaUdpClient" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaUdpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JavaUdpClient" />
+      <module name="Java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaUdpServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task1.JavaUdpServer" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaUdpServer (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task2.JavaUdpServer" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaUdpServer (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="task3.JavaUdpServer" />
+      <module name="Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="task3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JavaUdpClient" />
+      <item itemvalue="Application.JavaUdpServer (1)" />
+      <item itemvalue="Application.JavaUdpClient (1)" />
+      <item itemvalue="Application.JavaUdpServer (2)" />
+      <item itemvalue="Application.JavaUdpServer (3)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaUdpServer (3)" />
+        <item itemvalue="Application.JavaUdpServer (2)" />
+        <item itemvalue="Application.JavaUdpClient (1)" />
+        <item itemvalue="Application.JavaUdpServer (1)" />
+        <item itemvalue="Application.JavaUdpClient" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aece31a9-d2d2-4576-8ca7-1c7344fe67e9" name="Default Changelist" comment="" />
+      <created>1582550792283</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582550792283</updated>
+      <workItem from="1582550800884" duration="5129000" />
+      <workItem from="1582610340840" duration="1251000" />
+      <workItem from="1582614453325" duration="42000" />
+      <workItem from="1582614556005" duration="345000" />
+      <workItem from="1582654744366" duration="306000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser" timestamp="1582611164555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="123" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1582611164555" />
+    <state x="549" y="155" key="FileChooserDialogImpl" timestamp="1582614489869">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1582614489869" />
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom" timestamp="1582611603179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582611603179" />
+    <state width="1493" height="238" key="GridCell.Tab.0.center" timestamp="1582611603179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582611603179" />
+    <state width="1493" height="238" key="GridCell.Tab.0.left" timestamp="1582611603179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582611603179" />
+    <state width="1493" height="238" key="GridCell.Tab.0.right" timestamp="1582611603179">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="238" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582611603179" />
+    <state x="585" y="137" key="extract.method.dialog" timestamp="1582655040198">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="585" y="137" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1582655040198" />
+    <state x="209" y="34" key="new project wizard" timestamp="1582614492494">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="34" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1582614492494" />
+  </component>
+</project>
