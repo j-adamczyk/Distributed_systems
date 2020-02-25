@@ -2,8 +2,6 @@ package main;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.Socket;
@@ -36,8 +34,8 @@ public class Client
         textField.addActionListener(e ->
         {
             String text = textField.getText();
-            messageArea.append(text);
-            out.println(this.name + ": " + text + "\n");
+            messageArea.append(this.name + ": " + text + "\n");
+            out.println(text);
             textField.setText("");
         });
     }
@@ -48,8 +46,7 @@ public class Client
                 JOptionPane.PLAIN_MESSAGE);
     }
 
-
-    private void run() throws IOException
+    private void run()
     {
         try
         {
@@ -66,7 +63,8 @@ public class Client
                 }
                 else if (line.startsWith("NAMEACCEPTED"))
                 {
-                    this.frame.setTitle("Chat - " + line.substring(13));
+                    this.name = line.substring(13);
+                    this.frame.setTitle("Chat - " + name);
                     textField.setEditable(true);
                 }
                 else if (line.startsWith("MESSAGE"))
@@ -82,7 +80,7 @@ public class Client
         }
     }
 
-    public static void main(String[] args) throws IOException
+    public static void main(String[] args)
     {
         int serverPort = 12345;
         String serverAddress = "127.0.0.1";

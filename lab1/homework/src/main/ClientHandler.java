@@ -46,7 +46,8 @@ public class ClientHandler implements Runnable
                         return;
 
                     for (PrintWriter writer: server.getWriters())
-                        writer.println("MESSAGE " + name + ": " + input);
+                        if (writer != this.out)
+                            writer.println("MESSAGE " + name + ": " + input);
                 }
                 catch (NoSuchElementException e)
                 { return; }
