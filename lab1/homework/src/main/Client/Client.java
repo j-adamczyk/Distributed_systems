@@ -202,7 +202,6 @@ public class Client implements Runnable
             catch (IOException e)
             { JOptionPane.showMessageDialog(frame, "Error occured while reading file."); }
 
-            System.out.println(msg);
             byte[] msgBytes = msg.getBytes();
 
             // UDP unicast
