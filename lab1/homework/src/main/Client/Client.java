@@ -18,11 +18,13 @@ public class Client implements Runnable
     private int serverPort;
     private InetAddress UDPAddress;
 
-    private String multicastAddress;
-    private int multicastPort;
-
     private DatagramSocket datagramSocket;
     private PrintWriter output;
+
+    private String multicastAddress;
+    private int multicastPort;
+    private InetAddress multicastGroup;
+    private MulticastSocket multicastSocket;
 
     private Lock readyLock;
     private Condition readyCondition;
@@ -69,7 +71,7 @@ public class Client implements Runnable
 
         String UDPAddress = "127.0.0.1";
 
-        String multicastAddress = "230.0.0.1";
+        String multicastAddress = "230.1.1.1";
         int multicastPort = 12346;
 
         Client client = new Client(serverAddress, serverPort, UDPAddress, multicastAddress, multicastPort);
@@ -92,7 +94,12 @@ public class Client implements Runnable
 
             this.datagramSocket = new DatagramSocket(socket.getLocalPort());
 
+            this.multicastSocket = new MulticastSocket(multicastPort);
+            this.multicastGroup = InetAddress.getByName(multicastAddress);
+            multicastSocket.joinGroup(multicastGroup);
+
             ListenerUDP listenerUDP = new ListenerUDP(datagramSocket, this);
+            ListenerMulticast listenerMulticast = new ListenerMulticast(multicastSocket, this);
             // wait until we successfully register
             readyLock.lock();
             try
@@ -105,7 +112,8 @@ public class Client implements Runnable
 
             messageArea.append("You've joined the chat as " + name + "\n");
 
-            listenerUDP.run();
+            new Thread(listenerUDP).start();
+            listenerMulticast.run();
         }
         catch (Exception e)
         { e.printStackTrace(); }
@@ -113,6 +121,16 @@ public class Client implements Runnable
         {
             if (datagramSocket != null)
                 datagramSocket.close();
+
+            if (multicastSocket != null)
+            {
+                try
+                { multicastSocket.leaveGroup(multicastGroup); }
+                catch (IOException e)
+                { e.printStackTrace(); }
+                multicastSocket.close();
+            }
+
             getFrame().setVisible(false);
             getFrame().dispose();
         }
@@ -170,9 +188,11 @@ public class Client implements Runnable
 
     public void sendMessage(String msg)
     {
-        // UDP unicast
-        if (msg.startsWith("/U"))
+        // UDP
+        if (msg.startsWith("/U") || msg.startsWith("/M"))
         {
+            char type = msg.charAt(1);
+
             msg = msg.substring(3);
             try
             {
@@ -184,18 +204,26 @@ public class Client implements Runnable
 
             System.out.println(msg);
             byte[] msgBytes = msg.getBytes();
+
+            // UDP unicast
             try
             {
-                this.datagramSocket.send(new DatagramPacket(msgBytes, msgBytes.length, UDPAddress, serverPort));
+                // UDP unicast
+                if (type == 'U')
+                {
+                    DatagramPacket packet = new DatagramPacket(msgBytes, msgBytes.length, UDPAddress, serverPort);
+                    this.datagramSocket.send(packet);
+                }
+                // UDP multicast
+                else
+                {
+                    DatagramPacket packet = new DatagramPacket(msgBytes, msgBytes.length, multicastGroup, multicastPort);
+                    this.datagramSocket.send(packet);
+                }
                 messageArea.append(msg);
             }
             catch (IOException e)
             { e.printStackTrace(); }
-        }
-        // UDP multicast
-        else if (msg.startsWith("/M"))
-        {
-
         }
         // TCP
         else
