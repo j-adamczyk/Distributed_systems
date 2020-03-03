@@ -42,7 +42,7 @@ public class ClientHandler implements Runnable
             // accept this client, inform others, add him to writers
             acceptName();
 
-            // Accept messages from this client and broadcast them.
+            // accept messages from this client and broadcast them.
             while (true)
             {
                 System.out.println(name + " ready");
@@ -98,11 +98,13 @@ public class ClientHandler implements Runnable
     {
         while (true)
         {
+            // request a new name
             output.println("SUBMITNAME");
             String name = input.nextLine();
             if (name == null)
                 return;
 
+            // check proposed name
             if (!name.isBlank() && server.isNameAvailable(name))
             {
                 server.addName(name);

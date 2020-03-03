@@ -2,8 +2,63 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a999fb53-56bd-4e63-aa0b-6a7f0f14c37f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/artifacts/lab_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/libraries/genson_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/genson-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-client.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-common.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-container-servlet-core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-container-servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-guava-2.22.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-media-jaxb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-server.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/RESTHelloWorld.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/RESTHelloWorldClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResourceClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResourceSimple.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodosResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/model/Todo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/aopalliance-repackaged-2.4.0-b34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/asm-debug-all-5.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/genson-1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-api-2.4.0-b34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-locator-2.4.0-b34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-utils-2.4.0-b34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javassist-3.18.1-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.annotation-api-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.inject-2.4.0-b34.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jaxb-api-2.2.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-client.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-common.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-container-servlet-core.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-container-servlet.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-guava-2.22.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-media-jaxb.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-server.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/org.osgi.core-4.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/persistence-api-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/Distributed_systems.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client/ListenerMulticast.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Client/ListenerMulticast.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Client/ListenerTCP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Client/ListenerTCP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Server/ClientHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +114,10 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
@@ -116,7 +171,10 @@
       <workItem from="1582791955552" duration="14039000" />
       <workItem from="1582811211079" duration="141000" />
       <workItem from="1582815255211" duration="8163000" />
-      <workItem from="1582826803270" duration="1472000" />
+      <workItem from="1582826803270" duration="1568000" />
+      <workItem from="1583088272728" duration="492000" />
+      <workItem from="1583231356075" duration="1098000" />
+      <workItem from="1583256260115" duration="3940000" />
     </task>
     <task id="LOCAL-00001" summary="Added unicast UDP support for sending small text files.">
       <created>1582824676867</created>
@@ -132,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582828294312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed print left from debugging">
+      <created>1582829612528</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1582829612528</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,9 +208,14 @@
     <MESSAGE value="Added UDP support for sending small text files." />
     <MESSAGE value="Added unicast UDP support for sending small text files." />
     <MESSAGE value="Added multicast UDP support for sending small text files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added multicast UDP support for sending small text files." />
+    <MESSAGE value="Removed print left from debugging" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed print left from debugging" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="332" y="16" key="#Google_App_Engine_Dev_Server" timestamp="1583088607680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="332" y="16" key="#Google_App_Engine_Dev_Server/0.0.1536.824@0.0.1536.824" timestamp="1583088607680" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582641661623">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -174,26 +244,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582822625358" />
-    <state x="364" y="7" key="CommitChangelistDialog2" timestamp="1582828292718">
+    <state x="364" y="7" key="CommitChangelistDialog2" timestamp="1583262147024">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1582828292718" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1582828258000">
+    <state x="364" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583262147024" />
+    <state x="520" y="99" key="FileChooserDialogImpl" timestamp="1583088758473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582828258000" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1582828258000">
+    <state x="520" y="99" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583088758473" />
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1583262147071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582828258000" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1582828257999">
+    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583262147071" />
+    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1583262147071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582828257999" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1582828258000">
+    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583262147071" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1583262147071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582828258000" />
+    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583262147071" />
+    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1583262147071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583262147071" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582824062750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -210,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582824062750" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1582641045292">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1583088721505">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582641045292" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583088721505" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1582669716573">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,6 +296,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1582828164161" />
+    <state x="209" y="0" key="new project wizard" timestamp="1583088764193">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1583088764193" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1582796607950">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

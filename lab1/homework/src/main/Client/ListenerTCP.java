@@ -25,8 +25,11 @@ public class ListenerTCP implements Runnable
         while (input.hasNextLine())
         {
             String line = input.nextLine();
+            // server requests registering a name, get and propose a name
             if (line.startsWith("SUBMITNAME"))
                 output.println(getName());
+
+            // server accepted proposed name
             else if (line.startsWith("NAMEACCEPTED"))
             {
                 String name = line.substring(13);
@@ -34,8 +37,10 @@ public class ListenerTCP implements Runnable
                 client.getFrame().setTitle("Chat - " + name);
                 client.getTextField().setEditable(true);
             }
+
+            // regular message
             else if (line.startsWith("MESSAGE"))
-                client.showMessage(line.substring(8));
+                client.showMessage(line.substring(8) + "\n");
         }
     }
 

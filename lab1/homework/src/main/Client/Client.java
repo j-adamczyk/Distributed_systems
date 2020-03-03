@@ -1,6 +1,7 @@
 package main.Client;
 
 import javax.swing.*;
+import javax.swing.text.DefaultCaret;
 import java.awt.*;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,22 +15,27 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class Client implements Runnable
 {
+    // parameters and socket handling
     private String serverAddress;
     private int serverPort;
-    private InetAddress UDPAddress;
 
+    private InetAddress UDPAddress;
     private DatagramSocket datagramSocket;
-    private PrintWriter output;
 
     private String multicastAddress;
     private int multicastPort;
     private InetAddress multicastGroup;
     private MulticastSocket multicastSocket;
 
-    private Lock readyLock;
-    private Condition readyCondition;
+    // "true" attributes - self name and output handler
+    private PrintWriter output;
     private String name;
 
+    // synchronization - guarantees proper registering before communication
+    private Lock readyLock;
+    private Condition readyCondition;
+
+    // GUI
     private JFrame frame = new JFrame("Chat");
     private JTextField textField = new JTextField(50);
     private JTextArea messageArea = new JTextArea(16, 50);
@@ -49,13 +55,17 @@ public class Client implements Runnable
         this.readyLock = new ReentrantLock();
         this.readyCondition = readyLock.newCondition();
 
+        // initialize Swing GUI
         textField.setEditable(false);
         messageArea.setEditable(false);
+        DefaultCaret caret = (DefaultCaret) messageArea.getCaret();
+        caret.setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
         frame.getContentPane().add(getTextField(), BorderLayout.SOUTH);
         frame.getContentPane().add(new JScrollPane(getMessageArea()), BorderLayout.CENTER);
         frame.pack();
         textField.requestFocus();
 
+        // main thread action after initializing handlers - handling input
         textField.addActionListener(e ->
         {
             String text = textField.getText();
@@ -66,6 +76,8 @@ public class Client implements Runnable
 
     public static void main(String[] args)
     {
+        // those technically should be parsed from args, not hardcoded, but it works fine as long as we treat
+        // those as well-known addresses and ports
         String serverAddress = "127.0.0.1";
         int serverPort = 12345;
 
@@ -85,18 +97,20 @@ public class Client implements Runnable
     {
         try (Socket socket = new Socket(this.serverAddress, this.serverPort))
         {
+            // initialize things we couldn't easily initialize in constructor - socket and everything relying on it
             Scanner input = new Scanner(socket.getInputStream());
             PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
             this.output = output;
-
-            ListenerTCP listenerTCP = new ListenerTCP(input, output, this);
-            new Thread(listenerTCP).start();
 
             this.datagramSocket = new DatagramSocket(socket.getLocalPort());
 
             this.multicastSocket = new MulticastSocket(multicastPort);
             this.multicastGroup = InetAddress.getByName(multicastAddress);
             multicastSocket.joinGroup(multicastGroup);
+
+            // handle TCP and registration, then UDP, then multicast
+            ListenerTCP listenerTCP = new ListenerTCP(input, output, this);
+            new Thread(listenerTCP).start();
 
             ListenerUDP listenerUDP = new ListenerUDP(datagramSocket, this);
             ListenerMulticast listenerMulticast = new ListenerMulticast(multicastSocket, this);
@@ -183,7 +197,7 @@ public class Client implements Runnable
 
     public synchronized void showMessage(String msg)
     {
-        this.messageArea.append(msg + "\n");
+        this.messageArea.append(msg);
     }
 
     public void sendMessage(String msg)
@@ -229,6 +243,7 @@ public class Client implements Runnable
         {
             // sometimes Swing null pointer is happening here for no apparent reason
             // (no variables are nulls, even when exception happens)
+            // it's a well known problem, this is a common workaround
             try
             {
                 messageArea.append(this.name + ": " + msg + "\n");
