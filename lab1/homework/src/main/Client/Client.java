@@ -218,7 +218,7 @@ public class Client implements Runnable
 
             byte[] msgBytes = msg.getBytes();
 
-            // UDP unicast
+            // UDP
             try
             {
                 // UDP unicast
