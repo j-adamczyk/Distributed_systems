@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Enter query</h1>
+    <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+        <p>
+            {{ form.city.label }}<br>
+            {{ form.city()}}
+            {% for error in form.city.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.date_from.label }}<br>
+            {{ form.date_from() }}
+        </p>
+        <p>
+            {{ form.date_to.label }}<br>
+            {{ form.date_to() }}
+        </p>
+
+        Date cases:
+        <ul>
+            <li>Both fields empty - current date will be used
+                (prediction for next ~24 hours)</li>
+            <li>Both fields filled - will use date range [date_from, date_to]
+                (inclusive on both sides)</li>
+            <li>Only first field filled - provided_date from first field will
+                be used (prediction for ~24 hours since that date)</li>
+            <li>Only second field filled - will use date date [current_date,
+                provided_date]</li>
+        </ul>
+
+        <a href="https://darksky.net/poweredby/"> (powered by Dark Sky)</a>
+
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

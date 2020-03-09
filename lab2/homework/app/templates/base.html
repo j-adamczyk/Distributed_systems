@@ -1,0 +1,13 @@
+<html>
+    <head>
+      <title>Weather consultant</title>
+    </head>
+    <body>
+        <div>
+            Weather consultant:
+            <a href="{{ url_for('index') }}">Home</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>

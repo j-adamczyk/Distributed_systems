@@ -2,59 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a999fb53-56bd-4e63-aa0b-6a7f0f14c37f" name="Default Changelist" comment="More comments, slight refactoring">
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/artifacts/lab_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/libraries/genson_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/activation-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/genson-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-client.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-common.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-container-servlet-core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-container-servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-guava-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-media-jaxb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/lib/jersey-server.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/RESTHelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/RESTHelloWorldClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResourceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodoResourceSimple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/TodosResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/src/services/rest/model/Todo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/aopalliance-repackaged-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/asm-debug-all-5.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/genson-1.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-api-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-locator-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/hk2-utils-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javassist-3.18.1-GA.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.annotation-api-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.inject-2.4.0-b34.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.servlet-api-3.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/javax.ws.rs-api-2.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jaxb-api-2.2.7.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-client.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-common.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-container-servlet-core.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-container-servlet.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-guava-2.22.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-media-jaxb.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/jersey-server.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/org.osgi.core-4.2.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/osgi-resource-locator-1.0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/persistence-api-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/lab/web/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/Distributed_systems.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/homework/app.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +126,8 @@
       <workItem from="1583088272728" duration="492000" />
       <workItem from="1583231356075" duration="1098000" />
       <workItem from="1583256260115" duration="4645000" />
+      <workItem from="1583592946357" duration="1727000" />
+      <workItem from="1583601327049" duration="1205000" />
     </task>
     <task id="LOCAL-00001" summary="Added unicast UDP support for sending small text files.">
       <created>1582824676867</created>
