@@ -26,13 +26,20 @@
                 (prediction for next ~24 hours)</li>
             <li>Both fields filled - will use date range [date_from, date_to]
                 (inclusive on both sides)</li>
-            <li>Only first field filled - provided_date from first field will
-                be used (prediction for ~24 hours since that date)</li>
-            <li>Only second field filled - will use date date [current_date,
-                provided_date]</li>
+            <li>Only first or only second field filled - only date from that
+                field will be used (prediction for ~24 hours since that date)
+            </li>
         </ul>
 
-        <a href="https://darksky.net/poweredby/"> (powered by Dark Sky)</a>
+        <a href="https://developers.google.com/maps/documentation/geocoding/">
+            (powered by Google Geocoding API)
+        </a><br>
+        <a href="https://darksky.net/poweredby/">
+            (powered by Dark Sky)
+        </a><br>
+        <a href="https://stormglass.io/">
+            (powered by Storm Glass)
+        </a>
 
         <p>{{ form.submit() }}</p>
     </form>
