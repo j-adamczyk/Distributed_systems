@@ -2,11 +2,16 @@ package main.Server;
 
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Server
 {
     private static Set<String> names = new HashSet<>();
+    private static Lock namesLock = new ReentrantLock();
+
     private static Set<ClientHandler> clientHandlers = new HashSet<>();
+    private static Lock clientHandlersLock = new ReentrantLock();
 
     public static void main(String[] args)
     {
@@ -31,19 +36,48 @@ public class Server
         return names;
     }
 
-    public synchronized boolean isNameAvailable(String name)
+    public synchronized Lock getNamesLock()
     {
-        return !names.contains(name);
+        return namesLock;
     }
 
-    public synchronized void addName(String name)
+    public boolean isNameAvailable(String name)
     {
-        names.add(name);
+        namesLock.lock();
+        try
+        {
+            return !names.contains(name);
+        }
+        finally
+        {
+            namesLock.unlock();
+        }
     }
 
-    public synchronized void removeName(String name)
+    public void addName(String name)
     {
-        names.remove(name);
+        namesLock.lock();
+        try
+        {
+            names.add(name);
+        }
+        finally
+        {
+            namesLock.unlock();
+        }
+    }
+
+    public void removeName(String name)
+    {
+        namesLock.lock();
+        try
+        {
+            names.remove(name);
+        }
+        finally
+        {
+            namesLock.unlock();
+        }
     }
 
     public synchronized Set<ClientHandler> getClientHandlers()
@@ -51,12 +85,17 @@ public class Server
         return clientHandlers;
     }
 
-    public synchronized void addClientHandler(ClientHandler clientHandler)
+    public synchronized Lock getClientHandlersLock()
+    {
+        return clientHandlersLock;
+    }
+
+    public void addClientHandler(ClientHandler clientHandler)
     {
         clientHandlers.add(clientHandler);
     }
 
-    public synchronized void removeClientHandler(ClientHandler clientHandler)
+    public void removeClientHandler(ClientHandler clientHandler)
     {
         clientHandlers.remove(clientHandler);
     }
