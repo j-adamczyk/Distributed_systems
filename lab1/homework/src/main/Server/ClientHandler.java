@@ -127,8 +127,16 @@ public class ClientHandler implements Runnable
 
     private void sendToAll(String msg)
     {
-        for (ClientHandler clientHandler: server.getClientHandlers())
-            if (!clientHandler.getName().equals(this.name))
-                clientHandler.getWriter().println(msg);
+        server.getClientHandlersLock().lock();
+        try
+        {
+            for (ClientHandler clientHandler : server.getClientHandlers())
+                if (!clientHandler.getName().equals(this.name))
+                    clientHandler.getWriter().println(msg);
+        }
+        finally
+        {
+            server.getClientHandlersLock().unlock();
+        }
     }
 }

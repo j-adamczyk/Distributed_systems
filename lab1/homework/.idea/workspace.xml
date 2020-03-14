@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a999fb53-56bd-4e63-aa0b-6a7f0f14c37f" name="Default Changelist" comment="More comments, slight refactoring">
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/api/google.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/api/stormglass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lab2/homework/tmp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab2/homework/app/summary_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Client/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Client/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Server/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab2/homework/app/api/darksky.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/app/api/darksky.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab2/homework/app/form_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/app/form_parser.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab2/homework/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/app/routes.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab2/homework/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/app/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/homework/app/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/app/templates/results.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab2/homework/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab2/homework/config.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +133,9 @@
       <workItem from="1583592946357" duration="1727000" />
       <workItem from="1583601327049" duration="1205000" />
       <workItem from="1583776829775" duration="61000" />
-      <workItem from="1583786812560" duration="2156000" />
+      <workItem from="1583786812560" duration="2296000" />
+      <workItem from="1583823820152" duration="1272000" />
+      <workItem from="1584193674364" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="Added unicast UDP support for sending small text files.">
       <created>1582824676867</created>
@@ -159,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583262178751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lab 1 homework - corrected comment">
+      <created>1583791283272</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583791283272</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +185,8 @@
     <MESSAGE value="Added multicast UDP support for sending small text files." />
     <MESSAGE value="Removed print left from debugging" />
     <MESSAGE value="More comments, slight refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="More comments, slight refactoring" />
+    <MESSAGE value="Lab 1 homework - corrected comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 1 homework - corrected comment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="332" y="16" key="#Google_App_Engine_Dev_Server" timestamp="1583088607680">
@@ -207,30 +221,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1582822625358" />
-    <state x="364" y="7" key="CommitChangelistDialog2" timestamp="1583262177253">
+    <state x="364" y="7" key="CommitChangelistDialog2" timestamp="1583791281476">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583262177253" />
+    <state x="364" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1583791281476" />
     <state x="520" y="99" key="FileChooserDialogImpl" timestamp="1583088758473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="520" y="99" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583088758473" />
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom" timestamp="1583263868014">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom" timestamp="1583825108086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583263868014" />
-    <state width="1493" height="198" key="GridCell.Tab.0.center" timestamp="1583263868014">
+    <state width="1493" height="191" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583825108086" />
+    <state width="1493" height="191" key="GridCell.Tab.0.center" timestamp="1583825108086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583263868014" />
-    <state width="1493" height="198" key="GridCell.Tab.0.left" timestamp="1583263868014">
+    <state width="1493" height="191" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583825108086" />
+    <state width="1493" height="191" key="GridCell.Tab.0.left" timestamp="1583825108086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583263868014" />
-    <state width="1493" height="198" key="GridCell.Tab.0.right" timestamp="1583263868014">
+    <state width="1493" height="191" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583825108086" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right" timestamp="1583825108086">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="198" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583263868014" />
+    <state width="1493" height="191" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583825108086" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1582824062750">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -251,10 +265,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583088721505" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583776872335">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1583791288052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583776872335" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1583791288052" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1582828164161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Results for your query</h1>
+    <b>City:</b> {{ city }}<br>
+    <b>Date from:</b> {{ date_from }}<br>
+    <b>Date to:</b> {{ date_to }}<br>
+    <br><br>
+    <h2>Summary</h2>
+    DS - Dark Sky<br>
+    SG - Storm Glass<br><br>
+    Standard deviation for Storm Glass was first calculated for each day and then
+    averaged; for Dark Sky it was calculated from data from each separate day.
+    <br><br><br>
+
+    <h3>Day length</h3>
+    Min: {{ dark_sky_summary.day_length.min }}<br><br>
+    Max: {{ dark_sky_summary.day_length.max }}<br><br>
+    Change: {{ dark_sky_summary.day_length.change }}<br><br><br>
+
+    <h3>Temperature</h3>
+    Unit: Celsius degrees<br><br>
+
+    Min: {{ dark_sky_summary.temperature.min }} (DS),
+         {{ storm_glass_summary.temperature.min }} (SG)<br><br>
+
+    Max: {{ dark_sky_summary.temperature.max }} (DS),
+         {{ storm_glass_summary.temperature.max }} (SG)<br><br>
+
+    Average: {{ dark_sky_summary.temperature.avg }} (DS),
+             {{ storm_glass_summary.temperature.avg }} (SG)<br><br>
+
+    Standard deviation: {{ storm_glass_summary.temperature.stdev }} (SG)
+    <br><br><br>
+
+    <h3>Apparent temperature</h3>
+    Unit: Celsius degrees<br><br>
+    Min: {{ dark_sky_summary.apparent_temperature.min }}<br><br>
+    Max: {{ dark_sky_summary.apparent_temperature.max }}<br><br>
+    Average: {{ dark_sky_summary.apparent_temperature.avg }}<br><br><br>
+
+    <h3>Cloud cover</h3>
+    Unit: percentage<br><br>
+    Min: {{ dark_sky_summary.cloudCover.min }} % (DS),
+         {{ storm_glass_summary.cloudCover.min }} % (SG)<br><br>
+
+    Max: {{ dark_sky_summary.cloudCover.max }} % (DS),
+         {{ storm_glass_summary.cloudCover.max }} % (SG)<br><br>
+
+    Average: {{ dark_sky_summary.cloudCover.avg }} % (DS),
+             {{ storm_glass_summary.cloudCover.avg }} % (SG)<br><br>
+
+    Standard deviation:
+        {{ dark_sky_summary.cloudCover.stdev }} % (DS),
+        {{ storm_glass_summary.cloudCover.stdev }} % (SG)<br><br><br>
+
+    <h3>Precipitation</h3>
+    Unit: milimeters of water (liters of water per square meter of surface)
+    <br><br>
+    Types (DS):
+    {% for type in dark_sky_summary.precipitation.types %}
+        <ul>
+            <li>{{ type }}</li>
+        </ul>
+    {% endfor %}<br>
+    Average probability: {{ dark_sky_summary.precipitation.prob }} (DS) <br><br>
+    Min: {{ storm_glass_summary.precipitation.min }} (SG)<br><br>
+
+    Max: {{ dark_sky_summary.precipitation.max }} (DS),
+         {{ storm_glass_summary.precipitation.max }} (SG)<br><br>
+
+    Average: {{ dark_sky_summary.precipitation.avg }} (DS),
+             {{ storm_glass_summary.precipitation.avg }} (SG)<br><br>
+
+    Standard deviation: {{ storm_glass_summary.precipitation.stdev }} (SG)
+    <br><br><br>
+
+    <h3>Humidity</h3>
+    Unit: percentage<br><br>
+    Min: {{ dark_sky_summary.humidity.min }} % (DS),
+         {{ storm_glass_summary.humidity.min }} % (SG)<br><br>
+
+    Max: {{ dark_sky_summary.humidity.max }} % (DS),
+         {{ storm_glass_summary.humidity.max }} % (SG)<br><br>
+
+    Average: {{ dark_sky_summary.humidity.avg }} % (DS),
+             {{ storm_glass_summary.humidity.avg }} % (SG)<br><br>
+
+    Standard deviation:
+        {{ dark_sky_summary.humidity.stdev }} % (DS),
+        {{ storm_glass_summary.humidity.stdev }} % (SG)<br><br><br>
+
+    <h3>Pressure</h3>
+    Unit: hPa<br><br>
+    Min: {{ dark_sky_summary.pressure.min }} (DS),
+         {{ storm_glass_summary.pressure.min }} (SG)<br><br>
+
+    Max: {{ dark_sky_summary.pressure.max }} (DS),
+         {{ storm_glass_summary.pressure.max }} (SG)<br><br>
+
+    Average: {{ dark_sky_summary.pressure.avg }} (DS),
+             {{ storm_glass_summary.pressure.avg }} (SG)<br><br>
+
+    Standard deviation:
+        {{ dark_sky_summary.pressure.stdev }} (DS),
+        {{ storm_glass_summary.pressure.stdev }} (SG)<br><br><br>
+
+    <h3>Wind</h3>
+    Unit: m/s<br><br>
+    Speed min: {{ dark_sky_summary.windSpeed.min }} (DS),
+               {{ storm_glass_summary.windSpeed.min }} (SG)<br>
+    Gust min: {{ dark_sky_summary.windGust.min }} (DS),
+              {{ storm_glass_summary.windGust.min }} (SG)<br><br>
+
+    Speed max: {{ dark_sky_summary.windSpeed.max }} (DS),
+               {{ storm_glass_summary.windSpeed.max }} (SG)<br>
+    Gust max: {{ dark_sky_summary.windGust.max }} (DS),
+              {{ storm_glass_summary.windGust.max }} (SG)<br><br>
+
+    Speed average: {{ dark_sky_summary.windSpeed.avg }} (DS),
+                   {{ storm_glass_summary.windSpeed.avg }} (SG)<br>
+    Gust average: {{ dark_sky_summary.windGust.avg }} (DS),
+                  {{ storm_glass_summary.windGust.avg }} (SG)<br><br>
+
+    Speed standard deviation:
+    {{ dark_sky_summary.windSpeed.stdev }} (DS),
+    {{ storm_glass_summary.windSpeed.stdev }} (SG)<br>
+
+    Gust standard deviation:
+    {{ dark_sky_summary.windGust.stdev }} (DS),
+    {{ storm_glass_summary.windGust.stdev }} (SG)<br>
+
+    <h3>Visibility</h3>
+    Unit: kilometers<br><br>
+    Min: {{ dark_sky_summary.visibility.min }} (DS),
+         {{ storm_glass_summary.visibility.min }} (SG)<br><br>
+
+    Max: {{ dark_sky_summary.visibility.max }} (DS),
+         {{ storm_glass_summary.visibility.max }} (SG)<br><br>
+
+    Average: {{ dark_sky_summary.visibility.avg }} (DS),
+             {{ storm_glass_summary.visibility.avg }} (SG)<br><br>
+
+    Standard deviation:
+        {{ dark_sky_summary.visibility.stdev }} (DS),
+        {{ storm_glass_summary.visibility.stdev }} (SG)<br><br><br>
+
+
+{% endblock %}

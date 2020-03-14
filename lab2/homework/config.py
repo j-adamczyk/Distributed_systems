@@ -9,6 +9,7 @@ class Config:
                 api_type = api_type.lower()
                 if api_type == "google":
                     self.google_key = key
-                    self.google_client = googlemaps.Client(key=key)
                 elif api_type == "dark_sky":
                     self.dark_sky_key = key
+                elif api_type == "storm_glass":
+                    self.storm_glass_key = key
