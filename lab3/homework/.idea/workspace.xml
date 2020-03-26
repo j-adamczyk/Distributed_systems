@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90eba709-9e34-413e-8b12-ae87ef9deb9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/lab.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/lib/amqp-client-5.8.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/lib/slf4j-api-1.7.29.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/lib/slf4j-simple-1.6.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task1a/SimpleConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task1a/SimpleProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task1b/QoSConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task1b/TimeListProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task2/DirectConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task2/DirectProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task2/TopicConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab/src/task2/TopicProducer.java" afterDir="false" />
+    <list default="true" id="6b326d46-23e5-4d43-830b-a48fbac356ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/amqp_client_5_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_api_1_7_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/slf4j_simple_1_6_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/amqp-client-5.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-api-1.7.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/slf4j-simple-1.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Agency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Carrier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/QueueListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queue/QueueWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/topic/TopicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/topic/TopicWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../lab1/homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/homework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,37 +33,127 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1ZerZBUERQDgmL9ZAIBEXypQLXW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="1Zfkxx7nDBLRVLswtrQcWDsxl5o" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Systemy rozproszone" />
-    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/slf4j-simple-1.6.2.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Application.Administrator">
+    <configuration name="Administrator" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Administrator" />
+      <module name="homework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Agency" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Agency" />
+      <module name="homework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Carrier" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Carrier" />
+      <module name="homework" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Administrator" />
+      <item itemvalue="Application.Agency" />
+      <item itemvalue="Application.Carrier" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Administrator" />
+        <item itemvalue="Application.Agency" />
+        <item itemvalue="Application.Carrier" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="90eba709-9e34-413e-8b12-ae87ef9deb9d" name="Default Changelist" comment="" />
-      <created>1585210453269</created>
+      <changelist id="6b326d46-23e5-4d43-830b-a48fbac356ed" name="Default Changelist" comment="" />
+      <created>1585237785071</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585210453269</updated>
-      <workItem from="1585210455607" duration="8000" />
+      <updated>1585237785071</updated>
+      <workItem from="1585237788579" duration="10465000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585242491985">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1585242491985" />
+    <state x="665" y="10" key="CommitChangelistDialog2" timestamp="1585250882263">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="665" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1585250882263" />
+    <state x="722" y="154" key="FileChooserDialogImpl" timestamp="1585237923100">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="722" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585237923100" />
+    <state width="855" height="261" key="GridCell.Tab.0.bottom" timestamp="1585248676538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="855" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585248676538" />
+    <state width="855" height="261" key="GridCell.Tab.0.center" timestamp="1585248676538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="855" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585248676538" />
+    <state width="855" height="261" key="GridCell.Tab.0.left" timestamp="1585248676538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="855" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585248676538" />
+    <state width="855" height="261" key="GridCell.Tab.0.right" timestamp="1585248676538">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="855" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585248676538" />
+    <state x="498" y="0" key="SettingsEditor" timestamp="1585237926120">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1585237926120" />
+    <state x="777" y="181" key="extract.method.dialog" timestamp="1585240134398">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="777" y="181" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1585240134398" />
   </component>
 </project>

@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a999fb53-56bd-4e63-aa0b-6a7f0f14c37f" name="Default Changelist" comment="Updated server concurrency synchronization">
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/src/Administrator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/src/topic/TopicListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../lab3/homework/src/topic/TopicWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab3/homework/.idea/homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/homework/homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab3/homework/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab3/homework/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab3/homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab3/homework/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="74caedf6-11c3-4581-9c75-c3327b785c0d" name="Updated server concurrency synchronization" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,6 +138,7 @@
       <workItem from="1583823820152" duration="1272000" />
       <workItem from="1584193674364" duration="1289000" />
       <workItem from="1584887750140" duration="23000" />
+      <workItem from="1585215761681" duration="1356000" />
     </task>
     <task id="LOCAL-00001" summary="Added unicast UDP support for sending small text files.">
       <created>1582824676867</created>
