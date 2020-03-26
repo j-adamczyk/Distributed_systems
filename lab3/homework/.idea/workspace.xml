@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="90eba709-9e34-413e-8b12-ae87ef9deb9d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/lab.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/lib/amqp-client-5.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/lib/slf4j-api-1.7.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/lib/slf4j-simple-1.6.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task1a/SimpleConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task1a/SimpleProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task1b/QoSConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task1b/TimeListProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task2/DirectConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task2/DirectProducer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task2/TopicConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab/src/task2/TopicProducer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../lab1/homework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../lab1/homework/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1ZerZBUERQDgmL9ZAIBEXypQLXW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Systemy rozproszone" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="90eba709-9e34-413e-8b12-ae87ef9deb9d" name="Default Changelist" comment="" />
+      <created>1585210453269</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585210453269</updated>
+      <workItem from="1585210455607" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
