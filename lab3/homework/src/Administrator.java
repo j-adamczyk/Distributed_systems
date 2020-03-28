@@ -16,9 +16,9 @@ public class Administrator
         new Thread(new TopicListener("admin", ign -> {})).start();
 
         Map<String, String> targetToKey = new HashMap<>();
-        targetToKey.put("agencies", "space.agencies.#");
-        targetToKey.put("carriers", "space.carriers.#");
-        targetToKey.put("all", "space.#");
+        targetToKey.put("agencies", "admin.agencies");
+        targetToKey.put("carriers", "admin.carriers");
+        targetToKey.put("all", "admin.all");
 
         TopicWriter writer = new TopicWriter();
 
@@ -52,7 +52,7 @@ public class Administrator
                         String msg = "ADMIN:-1:" + text;
                         try
                         {
-                            writer.send(msg, "#");
+                            writer.send(msg, key);
                             System.out.println("Sent \"" + msg + "\" with key \"" + key + "\"");
                         }
                         catch (IOException e)

@@ -21,6 +21,8 @@ public class Agency
         String agencyID = br.readLine();
 
         new Thread(new TopicListener("space.agencies." + agencyID, ign -> {})).start();
+        new Thread(new TopicListener("admin.agencies", ign -> {})).start();
+        new Thread(new TopicListener("admin.all", ign -> {})).start();
 
         TopicWriter adminWriter = new TopicWriter();
         Map<String, QueueWriter> serviceToWriter = new HashMap<>();

@@ -20,8 +20,6 @@ public class Carrier
         System.out.println("Enter carrier ID:");
         String carrierID = br.readLine();
 
-        System.out.println("Enter two services (available: people, load, satellites):");
-
         Set<String> availableServices = new HashSet<>();
         availableServices.add("people");
         availableServices.add("load");
@@ -30,14 +28,16 @@ public class Carrier
         String firstService, secondService;
         do
         {
+            System.out.println("Enter two services (available: people, load, satellites):");
             firstService = br.readLine();
             secondService = br.readLine();
+            System.out.println();
         }
         while (!availableServices.contains(firstService) ||
                 !availableServices.contains(secondService) ||
                 firstService.equals(secondService));
 
-        System.out.println("\nCARRIER READY\n");
+        System.out.println("CARRIER READY\n");
         TopicWriter writer = new TopicWriter();
         Consumer<String> consumer = msg ->
         {
@@ -69,6 +69,7 @@ public class Carrier
 
         new Thread(new QueueListener("space.carriers." + firstService, consumer)).start();
         new Thread(new QueueListener("space.carriers." + secondService, consumer)).start();
-        new Thread(new TopicListener("space.carriers." + carrierID, consumer)).start();
+        new Thread(new TopicListener("admin.carriers", ign -> {})).start();
+        new Thread(new TopicListener("admin.all", ign -> {})).start();
     }
 }
