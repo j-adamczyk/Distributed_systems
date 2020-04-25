@@ -1,0 +1,7 @@
+IoTAdapter.Endpoints=tcp -h localhost -p 10000
+
+# Number of processor cores * 2
+IoTAdapter.ThreadPool.Size=8
+
+Ice.Warn.Connections=1
+Ice.Trace.Network=3
