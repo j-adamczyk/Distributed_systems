@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "grpc.model";
+option java_outer_classname = "StockExchange";
+
+package stockExchange;
+
+service StockExchangeInformator
+{
+  rpc observe (ObserveRequest) returns (stream StockInfo);
+  rpc ping (Empty) returns (Empty);
+}
+
+message Empty
+{}
+
+message ObserveRequest
+{
+  string companyName = 1;
+}
+
+message StockInfo
+{
+  string companyName = 1;
+  string timestamp = 2;
+  repeated Spread spreads = 3;
+  Spread lastSpread = 4;
+  uint32 transactions = 5;
+  StockStatus stockStatus = 6;
+}
+
+message Spread
+{
+  float value = 1;
+  float changeFromLast = 2;
+}
+
+enum StockStatus
+{
+  LOSING = 0;
+  GAINING = 1;
+  SAME = 2;
+}
+
