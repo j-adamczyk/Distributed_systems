@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="aeron-client-1.27.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/aeron-client-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/aeron-driver-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/agrona-1.4.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-actor_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-cluster_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-http-core_2.13-10.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-http-jackson_2.13-10.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-http-testkit_2.13-10.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-http_2.13-10.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-parsing_2.13-10.1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-protobuf-v3_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-remote_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-slf4j_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/akka-stream_2.13-2.6.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/config-1.4.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/reactive-streams-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-java8-compat_2.13-0.9.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-library-2.13.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/scala-parser-combinators_2.13-1.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/sqlite-jdbc-3.30.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ssl-config-akka_2.12-0.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/ssl-config-core_2.13-0.4.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jsoup-1.13.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
