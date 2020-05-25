@@ -1,0 +1,21 @@
+bulbulator1=bulbulators/bulbulator1:tcp -h localhost -p 10000:udp -h localhost -p 10000
+bulbulator2=bulbulators/bulbulator2:tcp -h localhost -p 10000:udp -h localhost -p 10000
+
+basicCoffeeMaker=coffeeMakers/basicCoffeeMaker:tcp -h localhost -p 10000:udp -h localhost -p 10000
+coldCoffeeMaker=coffeeMakers/coldCoffeeMaker:tcp -h localhost -p 10000:udp -h localhost -p 10000
+superCoffeeMaker=coffeeMakers/superCoffeeMaker:tcp -h localhost -p 10000:udp -h localhost -p 10000
+
+basicMicrowave1=microwaves/basicMicrowave1:tcp -h localhost -p 10000:udp -h localhost -p 10000
+basicMicrowave2=microwaves/basicMicrowave2:tcp -h localhost -p 10000:udp -h localhost -p 10000
+superMicrowave=microwaves/superMicrowave:tcp -h localhost -p 10000:udp -h localhost -p 10000
+
+# END DEVICE DEFINITIONS
+
+# turn off warnings about server, we'll handle this our own way
+Ice.Warn.Connections=0
+
+# turn off retries - we'll handle this our own way
+Ice.RetryIntervals=-1
+
+# shorten retry time a bit
+Ice.Default.InvocationTimeout=1000

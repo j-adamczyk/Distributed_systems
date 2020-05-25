@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="error_prone_annotations-2.3.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/error_prone_annotations-2.3.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/failureaccess-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-api-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-auth-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-context-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-core-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-netty-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-okhttp-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-protobuf-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-protobuf-lite-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-stub-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/grpc-testing-1.27.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/guava-27.0.1-jre.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsr305-3.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-all-4.1.43.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/netty-common-4.1.43.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/perfmark-api-0.21.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/protobuf-java-3.11.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
