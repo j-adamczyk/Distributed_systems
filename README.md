@@ -15,4 +15,4 @@ Project 4.2: server controlling smart home devices (coffee makers, microwaves et
 
 Project 5: Zookeeper distributed file system  
 
-Project 6: shop prices consultant with HTTP server and SQLite database, using Akka actor system
+Project 6: shop prices comparison app with HTTP server and SQLite database, using Akka actor system
