@@ -12,3 +12,7 @@ Project 3: message-oriented middleware system using RabbitMQ for task passing be
 Project 4.1: server providing stock exchange information (simple random generation) and client subscribing on companies' information, using gRPC middleware  
 
 Project 4.2: server controlling smart home devices (coffee makers, microwaves etc.) and client remotely controlling them with ZeroC Ice middleware  
+
+Project 5: Zookeeper distributed file system  
+
+
