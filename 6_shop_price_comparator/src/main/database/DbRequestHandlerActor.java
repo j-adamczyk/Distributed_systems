@@ -40,19 +40,19 @@ public class DbRequestHandlerActor extends AbstractActor
         {
             // row was present in the database
             count = result.getInt("count");
+            request.respondTo.tell(new DbResponse(count, request.id), getSelf());
             int newCount = count + 1;
             query = "UPDATE history SET count = " + newCount + " WHERE name='" + request.product + "';";
             statement.executeUpdate(query);
         }
         else
         {
+            count = 0;
+            request.respondTo.tell(new DbResponse(count, request.id), getSelf());
             // this is the first request for that row
             query = "INSERT INTO history (name, count) VALUES ('" + request.product + "', 1);";
             statement.executeUpdate(query);
-            count = 0;
         }
-
-        request.respondTo.tell(new DbResponse(count, request.id), getSelf());
 
         result.close();
         statement.close();
