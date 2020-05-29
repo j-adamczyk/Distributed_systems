@@ -33,6 +33,8 @@ public class PriceActor extends AbstractActor
                     PriceResponse response = new PriceResponse(true, price, request.product);
                     response.id = request.id;
                     request.respondTo.tell(response, getSelf());
+
+                    getContext().stop(getSelf());
                 })
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +

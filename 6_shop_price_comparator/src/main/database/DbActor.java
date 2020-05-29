@@ -11,13 +11,6 @@ import java.sql.Statement;
 
 public class DbActor extends AbstractActor
 {
-    private final Connection connection;
-
-    DbActor() throws ClassNotFoundException, SQLException
-    {
-        this.connection = Utils.getDbConnection();
-    }
-
     @Override
     public Receive createReceive()
     {
@@ -32,8 +25,9 @@ public class DbActor extends AbstractActor
                 .build();
     }
 
-    private void saveToDb(DbRequest request) throws SQLException
+    private void saveToDb(DbRequest request) throws ClassNotFoundException, SQLException
     {
+        Connection connection = Utils.getDbConnection();
         Statement statement = connection.createStatement();
         String query = "SELECT * FROM history WHERE name = '" + request.product + "';";
         ResultSet result = statement.executeQuery(query);
