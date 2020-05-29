@@ -14,7 +14,7 @@ public class ShopActor extends AbstractActor
                         request -> getContext().actorOf(Props.create(PriceActor.class)).tell(request, getSender()))
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                                "\" received by ShopActor."))
+                                "\" received by ShopActor.\n"))
                 .build();
     }
 }

@@ -16,7 +16,7 @@ public class DbActor extends AbstractActor
                                 .tell(request, getSender()))
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                                "\" received by DbActor."))
+                                "\" received by DbActor.\n"))
                 .build();
     }
 }
