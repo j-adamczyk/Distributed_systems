@@ -30,8 +30,6 @@ def results():
     summary = get_summary(dark_sky_results, storm_glass_results)
     dark_sky_summary, storm_glass_summary = summary
 
-    print(dark_sky_summary)
-
     date_from = date_from.strftime("%d/%m/%Y")
     date_to = date_to.strftime("%d/%m/%Y")
     return render_template("results.html",

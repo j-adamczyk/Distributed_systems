@@ -17,18 +17,32 @@ public class ClientActor extends AbstractActor
                     ))
             .match(PriceResponse.class, response ->
                     {
-                        if (response.succeeded)
-                            System.out.println("Best price for " + response.product + " is " + response.price + ".");
-                        else
-                            System.out.println("No price available at the moment, both server-side actor requests " +
-                                    "timed out.");
+                        StringBuilder stringBuilder = new StringBuilder();
 
-                        System.out.println("Request for this product has been made " + response.prevRequests +
-                                " times before.");
+                        stringBuilder.append("Actor ")
+                                .append(this.getSelf().path().name())
+                                .append(" received following response:\n");
+
+                        if (response.succeeded)
+                            stringBuilder.append("Best price for ")
+                                    .append(response.product)
+                                    .append(" is ")
+                                    .append(response.price)
+                                    .append(".\n");
+                        else
+                            stringBuilder.append("No price available at the moment, both server-side actor requests " +
+                                    "timed out.\n");
+
+                        if (response.prevRequests >= 0)
+                            stringBuilder.append("Request for this product has been made ")
+                                    .append(response.prevRequests)
+                                    .append(" times before.\n");
+
+                        System.out.println(stringBuilder.toString());
                     })
             .matchAny(unknown ->
                     System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                            "\" received by ClientActor."))
+                            "\" received by ClientActor.\n"))
             .build();
     }
 }

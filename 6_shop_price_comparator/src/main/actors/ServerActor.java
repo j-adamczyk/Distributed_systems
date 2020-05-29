@@ -141,7 +141,7 @@ public class ServerActor extends AbstractActor
                 })
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                                "\" received by ServerActor."))
+                                "\" received by ServerActor.\n"))
                 .build();
     }
 }

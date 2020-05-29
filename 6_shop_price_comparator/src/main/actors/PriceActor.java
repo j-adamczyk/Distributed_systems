@@ -37,7 +37,7 @@ public class PriceActor extends AbstractActor
                 })
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                                "\" received by PriceActor."))
+                                "\" received by PriceActor.\n"))
                 .build();
     }
 }
