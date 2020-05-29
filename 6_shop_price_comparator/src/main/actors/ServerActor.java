@@ -14,19 +14,11 @@ import static akka.actor.SupervisorStrategy.resume;
 
 public class ServerActor extends AbstractActor
 {
-    private final ActorRef shop1Actor;
-    private final ActorRef shop2Actor;
-    private final ActorRef dbActor;
-
     private Integer nextId;
     private final Map<Integer, ServerResponseData> activeRequests;
 
     ServerActor()
     {
-        this.shop1Actor = getContext().actorOf(Props.create(ShopActor.class), "shop1");
-        this.shop2Actor = getContext().actorOf(Props.create(ShopActor.class), "shop2");
-        this.dbActor = getContext().actorOf(Props.create(DbActor.class), "database");
-
         this.nextId = 1;
         this.activeRequests = new HashMap<>();
     }
@@ -37,7 +29,7 @@ public class ServerActor extends AbstractActor
         return new OneForOneStrategy(
                 10,
                 Duration.ofSeconds(30),
-                DeciderBuilder.matchAny(any -> (SupervisorStrategy.Directive) resume())
+                DeciderBuilder.matchAny(any -> resume())
                 .build()
         );
     }
@@ -58,9 +50,12 @@ public class ServerActor extends AbstractActor
                     ServerResponseData newData = new ServerResponseData(request.respondTo, product);
                     this.activeRequests.put(id, newData);
 
-                    shop1Actor.tell(serverRequest, getSender());
-                    shop2Actor.tell(serverRequest, getSender());
+                    ActorRef shopActor1 = getContext().actorOf(Props.create(ShopActor.class), "shop" + id + "_1");
+                    ActorRef shopActor2 = getContext().actorOf(Props.create(ShopActor.class), "shop" + id + "_2");
+                    shopActor1.tell(serverRequest, getSender());
+                    shopActor2.tell(serverRequest, getSender());
 
+                    ActorRef dbActor = getContext().actorOf(Props.create(DbActor.class), "db" + id);
                     DbRequest dbRequest = new DbRequest(getSelf(), product, id);
                     dbActor.tell(dbRequest, getSelf());
 
