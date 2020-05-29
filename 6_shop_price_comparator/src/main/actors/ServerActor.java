@@ -50,10 +50,10 @@ public class ServerActor extends AbstractActor
                     ServerResponseData newData = new ServerResponseData(request.respondTo, product);
                     this.activeRequests.put(id, newData);
 
-                    ActorRef shopActor1 = getContext().actorOf(Props.create(ShopActor.class), "shop" + id + "_1");
-                    ActorRef shopActor2 = getContext().actorOf(Props.create(ShopActor.class), "shop" + id + "_2");
-                    shopActor1.tell(serverRequest, getSender());
-                    shopActor2.tell(serverRequest, getSender());
+                    ActorRef shop1 = getContext().actorOf(Props.create(PriceActor.class), "shop" + id + "_1");
+                    ActorRef shop2 = getContext().actorOf(Props.create(PriceActor.class), "shop" + id + "_2");
+                    shop1.tell(serverRequest, getSender());
+                    shop2.tell(serverRequest, getSender());
 
                     ActorRef dbActor = getContext().actorOf(Props.create(DbActor.class), "db" + id);
                     DbRequest dbRequest = new DbRequest(getSelf(), product, id);

@@ -1,6 +1,7 @@
 package main.actors;
 
 import akka.actor.AbstractActor;
+import akka.actor.Props;
 import main.GlobalConstants;
 import main.model.PriceRequest;
 import main.model.PriceResponse;
@@ -15,8 +16,7 @@ public class PriceActor extends AbstractActor
     public Receive createReceive()
     {
         return receiveBuilder()
-                .match(PriceRequest.class, request ->
-                {
+                .match(PriceRequest.class, request -> {
                     Random rand = new Random();
                     int sleepTime = GlobalConstants.MIN_SLEEP +
                             rand.nextInt(GlobalConstants.MAX_SLEEP - GlobalConstants.MIN_SLEEP + 1);
@@ -33,11 +33,10 @@ public class PriceActor extends AbstractActor
                     PriceResponse response = new PriceResponse(true, price, request.product);
                     response.id = request.id;
                     request.respondTo.tell(response, getSelf());
-                    getContext().stop(getSelf());
                 })
                 .matchAny(unknown ->
                         System.err.println("Warning: unrecognized message class \"" + unknown.getClass() +
-                                "\" received by PriceActor.\n"))
+                                "\" received by ShopActor.\n"))
                 .build();
     }
 }
